@@ -1,6 +1,7 @@
 package hu.petrik.emberekoop;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Ember {
     private String nev;
@@ -27,10 +28,16 @@ public class Ember {
 
     public int getEletkor(){
         LocalDate maiDatum = LocalDate.now();
-        return maiDatum.getYear() - this.getSzuletesiEv();
+        if (maiDatum.getMonthValue()<=this.getSzuletesiHonap()){
+            return maiDatum.getYear() - this.getSzuletesiEv() - 1;
+
+        } else if (maiDatum.getDayOfMonth()>=this.getSzuletesiNap() && maiDatum.getMonthValue()==this.getSzuletesiHonap()){
+            return maiDatum.getYear() - this.getSzuletesiEv();
+
+        }else {
+            return maiDatum.getYear() - this.getSzuletesiEv();
+        }
     }
-
-
 
     @Override
     public String toString() {

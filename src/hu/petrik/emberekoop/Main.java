@@ -12,7 +12,7 @@ public class Main {
         Ember human4 = new Ember("Sárosi Roland", "1973-1-1", "Budapest");
         Ember human5 = new Ember("Róth Nikolett", "1973-2-26", "Veszprém");
         Emberek emberek = new Emberek(new Ember[]{human,human2,human3,human4,human5});
-        //out.println(emberek);
+        out.println(emberek);
         String fajlNev = "emberek.txt";
         try {
             Emberek emberek2 = new Emberek(fajlNev);
