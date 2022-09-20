@@ -26,6 +26,13 @@ public class Ember {
         return Integer.parseInt(szulDatum.split("-")[2]);
     }
 
+    public int getEletkorDatumkent(){
+        LocalDate maiDatum = LocalDate.now();
+        LocalDate szulDatum = LocalDate.of(this.getSzuletesiEv(), this.getSzuletesiHonap(), this.getSzuletesiNap());
+        Period elteltIdo = Period.between(szulDatum, maiDatum);
+        return elteltIdo.getYears();
+    }
+
     public int getEletkor(){
         LocalDate maiDatum = LocalDate.now();
         if (maiDatum.getMonthValue()<=this.getSzuletesiHonap()){
