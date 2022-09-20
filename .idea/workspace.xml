@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0764202f-1080-4c5f-88f0-68ce85f1482f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hu/petrik/emberekoop/Emberek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/petrik/emberekoop/Ember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/petrik/emberekoop/Ember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hu/petrik/emberekoop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/petrik/emberekoop/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
